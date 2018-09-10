@@ -1,0 +1,38 @@
+http://codd.cs.gsu.edu/~hpenta1/Assignment4/
+
+setx -m OPENCV_DIR C:\opencv\build\x64\vc14
+
+https://www.youtube.com/watch?v=X6rPdRZzgjg&t=239s
+
+https://gist.github.com/sm00th/1481923
+https://gist.github.com/sm00th/4312484
+https://www.researchgate.net/profile/Bodhisattwa_Chakraborty/publication/259589930_A_Trajectory-Based_Ball_Detection_and_Tracking_System_with_Applications_to_Shooting_Angle_and_Velocity_Estimation_in_Basketball_Videos/links/0c9605334137a896b5000000.pdf?disableCoverPage=true
+
+color filtering
+cvtColor()
+inRange()
+contour finding
+findCountours()
+moments method
+
+
+
+______________
+
+scene have many objects 
+
+cvtColor()
+Objects look different under varying conditions:
+
+Changes in lighting or color
+Changes in viewing direction
+Changes in size / shape
+
+canny edge detection method
+
+surf
+https://morf.lv/complete-guide-using-surf-feature-detector
+
+ Kalman filtering and incremental Bayesian algorithms 
+ 
+ Mean Shift search and CONDENSATION 

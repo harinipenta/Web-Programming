@@ -1,0 +1,29 @@
+body{
+	background-repeat: no-repeat;
+	font-family: "arial";
+	font-size: 12pt;
+	
+background-image: url("pay.jpg");
+	height: 100%;
+	text-align:center;
+}
+table.tablestyle{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1{
+	text-align:center;
+}
+ul {
+		text-align:center;
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+.error
+{
+display:block;
+color:#f00;
+}

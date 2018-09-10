@@ -1,0 +1,3 @@
+<p>
+An introduction to discipline of computer science with coverage of algorithmic foundations, hardware concepts, and introductory programming in Java.
+</p>

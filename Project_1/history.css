@@ -1,0 +1,44 @@
+img{
+ display: block;
+    margin: auto;
+    float:right;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+	}
+.imgleft{
+    display: block;
+    margin: auto;
+    float:left;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}	
+.first{
+    border-style:solid;
+    font-size: 1.2em;
+        
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        border-collapse: collapse;
+        background-color: #eee;
+}
+tr {
+        margin: 0px;
+        padding: 0px;
+      }
+      td {
+        border: 2px solid #333355;
+        margin: 0px;
+        padding: 6px;
+}
+.image{
+   height:30px;
+   width:30px;
+}
+h2{
+  color:Blue;
+}

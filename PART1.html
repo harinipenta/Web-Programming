@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> PART1 </title>
+<link rel="stylesheet" type="text/css" href="PART1STYLE.css">
+</head>
+<body>
+<h1 class = "h1style"> Apply Text Styles </h1>
+<form action="PART1PHP.php" method="get">
+Font-family:
+<br> <input type = "radio" name = "Font" value = "Times New Roman" checked> Times New Roman <br>
+<input type = "radio" name = "Font" value = "Times"> Times <br>
+<input type = "radio" name = "Font" value = "serif"> serif <br>
+<input type = "radio" name = "Font" value = "Sans-serif"> Sans-serif <br>
+<input type = "radio" name = "Font" value = "Calibri"> Calibri <br>
+<br>
+Font-style:
+<br> <input type = "radio" name = "Font-style" value = "normal" checked> normal <br>
+<input type = "radio" name = "Font-style" value = "italic"> italic <br>
+<input type = "radio" name = "Font-style" value = "oblique"> oblique <br>
+<input type = "radio" name = "Font-style" value = "bold"> bold <br>
+<br>
+Text-color:
+<select name = "color">
+  <option value="black"> Blue </option>
+  <option value="red"> Green </option>
+  <option value="yellow"> Yellow </option>
+  <option value="blue"> Red </option>
+</select>
+<br>
+<br>
+Font-size:
+<input type = "radio" name = "Font-size" value = "10px"> 10px
+<input type = "radio" name = "Font-size" value = "20px"> 20px
+<input type = "radio" name = "Font-size" value = "30px"> 30px
+<input type = "radio" name = "Font-size" value = "40px"> 40px <br>
+<br>
+Enter text for which you want to apply the style:
+<br>
+<textarea name = "Text" rows = "4" cols = "50">
+</textarea>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1{
+   color:blue;
+}
+p{
+font-size:large;
+}
+div {
+    width: 700px;
+    height:250px;
+    background-color:#eee;
+    border: 1px solid black;
+    padding:5px;
+    transform: translate(0px,0px); 
+}
+.one{
+   border-color:#eee;
+}

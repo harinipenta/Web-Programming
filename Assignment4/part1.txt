@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 4</title>
+    <?php
+        print '<link rel="stylesheet" type="text/css" href="css/style.php">';
+    ?>
+</head>
+
+<body>
+    <?php
+    if($_POST){
+        session_start();
+        $text = htmlspecialchars_decode($_POST["remarks"]);
+        $color = htmlspecialchars_decode(trim($_POST["radioColor"]));
+        $fontFamily = htmlspecialchars_decode(trim($_POST["radioFontFamily"]));
+        $fontWeight = htmlspecialchars_decode(trim($_POST["optionFontWeight"]));
+        $fontSize = htmlspecialchars_decode(trim($_POST["optionFontSize"]));
+        
+        $_SESSION['colorVariable'] = $color;
+        $_SESSION['fontFamilyVariable'] = $fontFamily;
+        $_SESSION['fontWeightVariable'] = $fontWeight;
+        $_SESSION['fontSizeVariable'] = $fontSize;
+        
+        print "<p class ='modifiable'>" . $text . "</p>";
+    }else // ! $_POST
+    {
+        print "POST does not exist. It is set to false.";
+    }
+    ?>
+</body>
+
+</html>
+
+
+
+
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.php">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <form action="assignment4.php" method="post">
+        
+        <fieldset>
+            <legend><b><i>Enter Information</i></b></legend>
+            <div>
+                <h2>Font-Family Options:</h2>
+                <p>
+                    <input name="radioFontFamily" type="radio" value="Impact" />Impact
+                </p>
+                <p>
+                    <input name="radioFontFamily" type="radio" value="Fantasy" />Fantasy
+                </p>
+                <p>
+                    <input name="radioFontFamily" type="radio" value="Cursive" />Cursive
+                </p>
+            </div>
+            <div >
+                <h2>Text Color Options:</h2>
+                <p>
+                    <input name="radioColor" type="radio" value="red" />Red
+                </p>
+                <p>
+                    <input name="radioColor" type="radio" value="blue" />Blue
+                </p>
+                <p>
+                    <input name="radioColor" type="radio" value="green" />Green
+                </p>
+            </div>
+            <div>
+                <h2>Font Weight Options:</h2>
+                <select name="optionFontWeight">
+                    <option value="lighter">Lighter</option>
+                    <option value="bold">Bold</option>
+                    <option value="bolder">Bolder</option>
+                </select>
+            </div>
+            <div>
+                <h2>Font Size Options:</h2>
+                <p>
+                    <input type="text" name="optionFontSize"> px
+                </p>
+            </div>
+            <p>
+                Please write your comments here.
+                <br/>
+                <textarea id="theText" name="remarks" rows="10" cols="25">I'm very pleased with your service!!!</textarea>
+            </p>
+            <p>
+                <input name="submitButton" type="submit" value="Submit" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+
+<?php
+/*
+    style.php
+*/
+    header("Content-type: text/css; charset:UTF-8");
+    print "header{";
+    print "text-align: center;";
+    print "}";
+    
+    print "h1,h3{";
+    print "font-weight: normal;";
+    print "}";
+    
+    print ".centering{";
+    print "text-align: center;";
+    print "}";
+?>
+
+    <?php
+        session_start();
+        $color = $_SESSION['colorVariable'];
+        $fontFamily = $_SESSION['fontFamilyVariable'];
+        $fontWeight = $_SESSION['fontWeightVariable'];
+        $fontSize = $_SESSION['fontSizeVariable'];
+        print ".modifiable {";
+        print "color: " . $color . ";";
+        print "font-family: " . $fontFamily . ";";
+        print "font-weight: " . $fontWeight . ";";
+        print "font-size: " . $fontSize . "px;";
+    print "}";
+    ?>

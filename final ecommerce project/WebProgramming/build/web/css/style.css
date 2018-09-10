@@ -1,0 +1,214 @@
+/*!
+
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+html,
+body {
+    height: 100%;
+	
+	
+}
+
+body {
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+.img-hover:hover {
+    opacity: 0;
+}
+.top-bar {
+    padding: 10px 0;
+    background: #191919;
+    border-bottom: 1px solid #222;
+    line-height: 28px;
+    color:white;
+    
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 70%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+.footer{
+	overflow-x:hidden;
+    color: #9d9d9d;
+    background-color: #130606;
+	text-align: center;
+	padding:14px;
+	
+	height:100px;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption
+{
+	 background-color: rgba(0,0,0, 0.8);
+	right: 30%;
+    text-align: center;
+    max-width: 500px;
+    left: auto;
+    /*top: auto;*/
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.item {
+    -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  }
+	
+
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+
+
+/* Responsive Styles */
+
+.panel-img{
+	width:100%;
+	
+}
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+/*brand*/
+.nav.navbar.navbar-inverse.navbar-fixed-top{
+	border-width:0px;
+	border:0px;
+	
+}
+
+.navbar-inverse  {
+    color: #9d9d9d;
+	font-size:16px;
+	font-weight:bold;
+	
+}
+.navbar-brand.logo {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 35px;
+	color: rgb(255,0,0);
+    line-height: 20px;
+	font-family:Impact, Charcoal, sans-serif;
+	letter-spacing: 2px;
+	font-weight:bold;
+
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	background-color:rgba(255,0,0,0.4);
+	
+	outline:none;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color:rgba(255,0,0,0.5);
+ 
+  outline:none;
+}
+
+/*formatting for social media icons*/
+i.fa.fa-twitter.circle{
+	font-size:30px;
+}
+i.fa.fa-facebook.circle{
+font-size:30px;	
+}
+i.fa.fa-google-plus.circle{
+	font-size:30px;
+}
+
+
+.circle{
+	border-radius: 50%;
+	margin: 0.15em;
+	font-size: 3em;
+	}
+	
+.fa-twitter{
+	background: #4099FF;
+	color: #FFFFFF;
+	padding: 0.05em 0.07em;
+	}
+
+.fa-google-plus{
+  color: #FFFFFF;
+  background: #dd4b39;
+  padding: 0.1em 0.1em;
+  
+  }  
+
+.fa-facebook{
+	background: #3B5998;
+	color: #FFFFFF;
+  padding: 0.05em 0.3em;
+	}
+
+	.thumb {
+    margin-bottom: 30px;
+}
+
+.modal-header {
+background:#cc0000;
+color:#ffffff;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5px;
+    padding-right:5px;
+}
+

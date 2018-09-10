@@ -1,0 +1,112 @@
+.topcorner{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.button {
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+.checkouth1{
+    color: red;
+}
+.checkouth2{
+    color: green;
+}   
+.indexh2
+{
+    color: black;
+}
+.indexh3
+{
+    color: black;
+}
+.indexh1
+{
+    color: red;
+}
+.orderformh3
+{
+    color:black;
+}
+.orderformh1
+{
+    color: black;
+}
+.submitorderh1
+{
+    color: blue;
+}
+.submitorderh3
+{
+    color: blue;
+}
+.vieworderh1
+{
+    color: white;
+    font-size: 25px;
+}
+.vieworderh3
+{
+    color: white;
+    font-size: 25px;
+}
+.checkoutbody {
+    background-image: url("images/valid.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100%
+
+}
+.indexbody {
+    background-image: url("images/homepage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100%
+
+}
+.orderformbody {
+     background-image: url("images/order.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100%
+
+}
+.submitorderbody {
+    background-image: url("images/outpark.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    width:100%; height:100%;
+    background-size:100%
+
+}
+.vieworderbody {
+    background-image: url("images/parcel.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    width:100%; height:100%;
+
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+

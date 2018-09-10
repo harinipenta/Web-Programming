@@ -1,0 +1,6 @@
+<p>
+
+The course introduces the student to programming techniques required to develop Web applications. Topics include: HTML forms, JavaScript, Servlets and Java Server Pages, PHP
+and MySQL, Web access to Oracle databases, and XML.
+
+</p>

@@ -1,0 +1,105 @@
+h1
+{
+
+ text-align:center;
+
+}
+
+
+
+h2
+{
+
+
+	text-align:center;
+
+}
+
+
+
+body
+{
+
+	font-family: "sans-serif";
+
+	background-image: url("image.jpg");
+
+        background-repeat: no-repeat;
+
+        background-size: 100% 100%;
+
+	font-size: 30px;
+
+        margin-left: 5%;
+
+        margin-right: 5%;
+
+}
+
+
+a:hover {
+
+    background-color: grey;
+
+}
+
+
+img
+{
+
+	display:block;
+
+	margin-left:auto;
+
+	margin-right:auto;
+
+        background-repeat: no-repeat;
+
+        background-size: 100% 100%;
+
+}
+
+
+
+table, tr, td
+{
+
+    [   border:0;
+
+
+}
+
+table
+{
+
+  border:0;
+
+
+  width: 85%;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+
+
+}
+
+tr.even
+{
+
+	background-color: #F0E68C;
+
+	text-align: center ;
+
+}
+
+
+tr.odd
+{
+
+        background-color: #E6E6FA;
+
+	text-align: center ;
+
+}

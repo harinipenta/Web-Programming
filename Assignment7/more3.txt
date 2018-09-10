@@ -1,0 +1,3 @@
+<p>
+Learn basic through advanced computer concepts with an emphasis on both the personal computer and enterprise computing. Overview of computer hardware, software, programming, and information systems as applied in the modern business environment. Topics include hardware, application and system software, the Internet and World Wide Web, communications, e-commerce, societal issues, database management, systems analysis and design, programming, information systems, career opportunities, certifications in the computer field, and computer trends.
+</p>

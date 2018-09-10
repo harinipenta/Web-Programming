@@ -1,0 +1,19 @@
+.body
+{
+	background-image: url("pic1.png");
+	background-size:cover;
+	
+}
+.container
+{
+	background-color:#FFF;
+	border:5px solid blue;
+	font:12px Verdana, Arial, Helvetica, sans-serif;
+	margin:20px auto;
+	padding:0;
+	width:760px;
+}
+.h1
+{
+	color:Magenta;
+}

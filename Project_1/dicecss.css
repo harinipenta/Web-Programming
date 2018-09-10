@@ -1,0 +1,137 @@
+.home-bg
+{
+background-image:url("dice.jpg");
+}
+.history-bg
+{
+	background-color:#FFB6C1;
+}
+h1
+{
+	    color: #B7950B;
+		text-align:center;
+		text-decoration:underline;
+
+}
+h2
+{
+	 	color: #B7950B;
+		text-align:center;
+		text-decoration:underline;
+}
+ul {
+text-color:white;    
+list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #555;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+div.title
+{
+	/*background-color:#F0F0F0;*/
+	color:#A4A400;
+}
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+.play {
+	background:#360;
+	background-color: #ff0000;
+	font: 12px/22px Verdana, Geneva, sans-serif;
+	color: #FFF;
+}
+div#test{ margin:80px auto; text-align:center; width:530px; }
+div#slots { background:url(5Black.jpg) left top no-repeat; margin:0 auto; width:530px; }
+div#slots div { background:url(1black.jpg) right top no-repeat; }
+/*div#slots div div { background:url(corner3.png) left bottom no-repeat; }
+div#slots div div div { background:url(corner4.png) right bottom no-repeat; height:250px; overflow:hidden; padding:15px; width:500px; }*/
+
+/*Contact US CSS */
+p{
+font-size:large;
+}
+div.contactus
+{
+    width: 700px;
+    height:250px;
+    /*background-color:#eee;*/
+    /*border: 1px solid black;*/
+    padding:5px;
+    transform: translate(0px,0px); 
+}
+.one{
+   border-color:#eee;
+}
+
+/*History CSS*/
+img{
+ display: block;
+    margin: auto;
+    float:right;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+	}
+.imgleft{
+    display: block;
+    margin: auto;
+    float:left;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}	
+.first{
+    border-style:solid;
+    font-size: 1.2em;
+        
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        border-collapse: collapse;
+        background-color: #eee;
+}
+tr {
+        margin: 0px;
+        padding: 0px;
+      }
+      td {
+        border: 2px solid #333355;
+        margin: 0px;
+        padding: 6px;
+}
+.image{
+   height:30px;
+   width:30px;
+}
+/*h2{
+  color:Blue;
+}*/

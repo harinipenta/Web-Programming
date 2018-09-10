@@ -1,0 +1,21 @@
+
+.tble
+{
+	width: 300px;
+	height: 10px;
+	
+	text-align: center;
+	border-style:   solid  ;
+}
+.tbprop
+{
+	 border-style:   ridge;
+	text-align: center;
+}
+h2{
+	color: brown;
+}
+body{
+	color: green;
+	background-color: lightblue;
+}

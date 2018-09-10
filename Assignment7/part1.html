@@ -1,0 +1,228 @@
+
+
+<html>
+
+	<head>
+
+		<title>Part-1</title>
+
+		<style>
+
+			#Credit, #Wire {
+
+				display: none;
+
+			}
+
+			.text1 {
+
+				width: 25px;
+
+			}
+
+			.text2 {
+
+				width: 50px;
+
+			}
+
+			.b1{
+
+			font-size:50px;
+
+			}
+
+			body{
+
+			background-color:cyan;
+
+			}
+
+			table
+			{
+				text-align:center;
+				align:center;
+				margin-left: auto;
+				margin-right:auto;
+			}
+</style>
+
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+		<script>
+
+				$(document).ready(function() {
+
+				$("input[name='Payment Page']").change(function() {
+
+					if ($("input[value='credit']:checked").val()) {
+
+						$("#Credit").toggle();
+
+						$("#Wire").hide();
+
+					} else if ($("input[value='wired']:checked").val()) {
+
+						$("#Wire").toggle();
+
+						$("#Credit").hide();
+
+					}
+
+				});
+
+				$(".List").change(function() {
+
+					this.value = parseInt(this.value);
+
+					if (this.value == "NaN") {
+
+						this.value = "";
+
+					}
+
+				});
+
+
+
+          $("#field1").keypress(function (e) {
+
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+
+
+        $("#errmsg1").html("Digits Only").show().fadeOut("slow");
+
+               return false;
+
+    }
+
+   });
+
+   $("#field2").keypress(function (e) {
+
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+
+
+        $("#errmsg2").html("Digits Only").show().fadeOut("slow");
+
+               return false;
+
+    }
+
+   });
+
+   $("#field3").keypress(function (e) {
+
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+
+
+        $("#errmsg3").html("Digits Only").show().fadeOut("slow");
+
+               return false;
+
+    }
+
+   });
+
+     $("#field4").keypress(function (e) {
+
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+
+
+
+        $("#errmsg4").html("Digits Only").show().fadeOut("slow");
+
+               return false;
+
+    }
+
+   });
+
+
+
+
+
+ });
+
+		</script>
+
+	</head>
+
+
+
+<body align="center" >
+
+		<div id="divPayment Page">
+
+			<b class="b1"> Payment Page </b> <br/>
+
+			<br>
+			<br>
+
+			<label><input type="radio" value="credit" name="Payment Page"/>Credit card</label>
+
+			<label><input type="radio" value="wired" name="Payment Page"/>Wire transfer</label>
+
+			<button> Buy </button>
+
+		</div>
+
+		<br>
+
+		<div id="Credit">
+
+			<table style="text-align:center">
+			<tr>
+
+				<td>
+					Card number:
+				</td>
+
+				<td>
+					<input type="text" class="List" id="field1" /><span id="errmsg1"></span><br/>
+				</td>
+
+			</tr>
+			<tr>
+
+				<td>
+					Expiration:
+				</td>
+
+				<td>
+					<input type="text" class="List text1" id="field2" /><span id="errmsg2"></span>
+					/
+					<input type="text" class="List text1" id="field3" /><span id="errmsg3"></span><br/>
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+					3-digit security number:
+				</td>
+
+				<td>
+					<input type="text" class="List text2" id="field4" /><span id="errmsg4"></span><br/>
+				</td>
+
+			</tr>
+			</table>
+
+		</div>
+
+		<div id="Wire">
+
+			Transfer the amount to: reg. $957.00, to account 0009286322
+
+		</div>
+
+	</body>
+
+</html>

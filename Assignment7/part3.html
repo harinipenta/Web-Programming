@@ -1,0 +1,133 @@
+<html>
+
+<head>
+
+<title>Part-3</title>
+
+<style>
+
+html{
+
+padding:1%;
+
+}
+
+h2{
+
+text-align:center;
+
+}
+
+.main{
+
+		width:40%;
+
+		height:30%;
+
+		background-repeat:no-repeat;
+
+		background-position:fixed;
+
+		background-size:cover;
+
+		background-color: cyan;
+
+		padding:1%;
+
+		margin-left:auto;
+
+		margin-right:auto;
+
+		 }
+
+</style>
+
+<script>
+
+function loadmore1() {
+
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+
+     document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+
+
+  xhttp.open("GET", "./more1.txt", true);
+
+  xhttp.send();
+
+}
+
+function loadmore2()
+ {
+
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+     document.getElementById("demo").innerHTML = xhttp.responseText;
+
+    }
+  };
+ 
+ xhttp.open("GET", "./more2.txt", true);
+
+  xhttp.send();
+
+}
+/*function loadmore3() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject(" Chrome.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "more1.txt", true);
+  xhttp.send();*/
+
+ function loadmore3() {
+
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function()
+ {
+
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+     document.getElementById("demo").innerHTML =xhttp.responseText;
+    }
+  };
+
+
+  xhttp.open("GET", "./more3.txt", true);
+  xhttp.send();
+} 
+
+</script>
+</head>
+<body>
+<div class="main">
+<h2>AJAX Example<h2><hr/>
+ <h3>Click for More Information</h3>
+<ul class="informatinable">
+<li onclick="loadmore1()">Web Programming </li>
+<li onclick="loadmore2()">Principles of Computer Science</li>
+<li onclick="loadmore3()">Computers and Applications</li>
+</ul>
+
+<div id="demo"></div>
+</div>
+</body>
+</html>

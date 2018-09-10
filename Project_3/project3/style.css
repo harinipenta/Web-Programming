@@ -1,0 +1,63 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background: url("back1.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;;}
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; color:black;}
+
+
+
+
+
+
+
+canvas{
+border:2px solid black;
+}
+
+button{
+background-color:black;
+color:white;
+}
+
+
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; }
+
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+button[disabled], input[disabled] { cursor: default; }
+
+
+
+
+
+div[role=main] {
+  margin: 25px;
+}
+
+
+.life-game {
+  border: 2px solid black;
+  display:block;
+  margin-bottom: 10px;
+}
+
+
+#id2
+{
+	color:black;
+	font-family: "Times New Roman", Georgia, Serif;
+}

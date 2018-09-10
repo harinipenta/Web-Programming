@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Part-2</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+         .drag{
+		    left:90px;
+            width: 100px; height: 18px;
+			text-align:center;
+			align:center;
+         }
+
+
+		 .area{
+		 margin: auto;
+		 height:250px;
+		 width:350px;
+
+
+		 }
+		 body
+		 {
+		 background-color:cyan;
+		 }
+      </style>
+      <script>
+         $(function() {
+            $('.removable').draggable({ revert: true });
+            $('.drop').droppable({
+               hoverClass: 'active',
+               drop: function(e, ui) {
+                  $( this );
+                  var r = confirm("You are deleting this item ; Are u sure???");
+				  if (r == true) {
+							ui.draggable.remove().html();
+				  }
+               }
+            });
+         });
+      </script>
+   </head>
+   <body>
+   <div class="area">
+   <h3> Drape and Drop - Move to Trash </h3>
+
+      <div class = "drag">
+	  <ul class = "removable"> Item1 </ul> <br>
+      <ul class = "removable"> Item2 </ul> <br>
+      <ul class = "removable"> Item3 </ul>
+      <ul class = "removable"> Item4 </ul>
+	  </div>
+
+      <div style="clear: both;padding:10px"> </div>
+	  <br/><br/>
+
+      <div class="drop" align="center"><b>TRASH CAN</b><br><img src="trash.jpg" height="50px" width="50px" alt="trash"/></div>
+	</div>
+
+   </body>
+</html>

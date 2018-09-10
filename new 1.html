@@ -1,0 +1,41 @@
+<html>
+<head>
+<style type="text/css">
+    .mandatory { color: red }
+  </style>
+  </head>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (Id==null || Id==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(Name==null || Name==""){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+  else if(Lastname==null || Lastname==""){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action=" " onsubmit="return validateform()" >  
+<p>
+<span class="mandatory">*</span><label id="Id_label" for="Id">Id</label>
+ <input id="Id" name="Id" type="text" /></p>
+<p>
+<span class="mandatory">*</span><label id="Name_label" for="Name">Your Name:</label>
+ <input id="Name" name="Name" type="text" /></p>
+<p>
+<span class="mandatory">*</span><label id="Lastname_label" for="Lastname">Lastname:</label>
+ <input id="Lastname" name="Lastname" type="text" /></p>
+
+<input type="submit" value="Add">   
+</form>  
+</body>
+</html>

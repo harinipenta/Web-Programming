@@ -1,0 +1,201 @@
+
+body
+{
+
+	background-color: #FFCC00;
+
+}
+
+.class1
+{
+	
+border-color: #FF0000;
+
+	background-color: #F0F0F0;
+
+	margin-bottom: 0px;
+
+	border: 2px;
+
+	border-bottom-style: none;
+
+	border-bottom-color: #000000;
+
+	line-height: 2;
+
+	font-weight: bold;
+
+	text-align: center;
+
+}
+
+.class2
+{
+
+	display: block;
+
+	background-color: #F0E68C;
+
+    color: red;
+
+    padding: 14px 25px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+	font-weight: bold;
+
+	font-size: 20px;
+
+}
+
+
+.f
+{
+
+	font-size: 20px;
+
+	font-family: sans-seriff;
+
+}
+
+
+.img1
+{
+
+	width:1000px;
+
+	height:400px;
+
+	display: block;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 2%;
+
+	margin-bottom: 2%;
+
+}
+
+.imgclass
+{
+
+	width:300px;
+
+	height:250px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+}
+
+
+.boldclass
+{
+
+	font-weight: bold;
+
+
+}
+
+
+.tbcl1
+{
+
+	padding: 5px;
+
+	border-spacing: 2px;
+
+	width : 50%;
+
+	text-align: center;
+
+	background-color: #CC9933;
+
+	color: white;
+
+	margin-top: 20px;
+
+
+}
+
+
+.tbcl2
+{
+
+	padding: 5px;
+
+	border-spacing: 2px;
+
+	width : 32.5%;
+
+	text-align: center;
+
+	background-color: #CC9933;
+
+	color: white;
+
+	margin-top: 20px;
+
+}
+
+
+.tcl2
+{
+
+	background-color: #F0F0F0;
+
+	color: #A4A400;
+
+	text-align: center;
+
+	font-weight: bold;
+
+}
+
+
+.thcl1
+{
+
+	background-color: #003366;
+
+}
+
+
+table, th, td
+{
+
+	border: 2px solid white;
+
+	border-collapse: collapse;
+
+}
+
+
+h1, h2
+{
+
+	background-color: #F0F0F0;
+
+	color: #A4A400;
+
+}
+
+
+.sh
+{
+
+	font-size: 25px;
+
+	font-weight: bold;
+
+	font-family: sans-seriff;
+
+}
+

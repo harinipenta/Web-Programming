@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Memory Game</title>
+	<script type="text/javascript" src="MemoryGame.js"></script>
+	<link href="MemoryGame.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body onload="LoadingPage()">
+<h1 class="headerstyle"> Memory Game</h1>
+<ul>
+<li><a href="EmployeePay.html">Part A</a></li><br>
+  <li><a href="GuessGame.html">Part B</a></li><br>
+  </ul>
+<h3>Select Required Number of Tiles:</h3>
+<select id="nooftiles" onchange="TilesNumberChange()">
+	<option selected>0</option>
+	<option>8</option>
+	<option>10</option>
+	<option>12</option>
+</select>
+
+<br><br/>
+<h3>Select the Difficulty Level</h3>
+<select id="difficulty" onchange="SetDifficulty()">
+	<option selected>3</option>
+	<option>5</option>
+	<option>8</option>
+</select>
+
+<br/><br/>
+<button onclick="arrangeTiles(0)"> Restart </button>
+<button onclick="startGame()">Start</button>
+
+<br/><br/>
+<div id="info">
+
+</div>
+<div id="Difficulty">
+
+</div>
+
+<br/>
+<h4>Instructions</h4>
+<h5>
+<ul>
+<li>You are given 3 levels of difficulty 3, 5, 8 seconds to memorize the locations, after then the pictures will be hidden. <br/> Your goal is to match each of the 8 pictures with its copy, Click the two matching images to reveal them. </li>
+<li>Please wait for images to disappear, and then allow the user to make the next attempt.<br/></li>
+</ul>
+</h5>
+<br/><br/>
+<div id="tiles">
+</div>
+</body>
+</html>
